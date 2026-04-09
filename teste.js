@@ -1,5 +1,6 @@
 // Felipe Lira de Oliveira - 08/04/2026
 // 3°T.D.S
+// N°06
 
 //  1. Exiba a mensagem "Olá mundo" no console.
 
@@ -35,5 +36,56 @@ console.log(kwdsa);
 let maiorQue = 18 < 21;
 console.log(maiorQue);
 
-// 8.
+// 8. Crie duas variaveis com algum valor e exiba a concatenação
+let var1 = "Lucas";
+let var2 = "Miguel";
 
+console.log(`teste ${var1} ${var2}`);
+
+// 9. Descubra o tipo de uma variável
+
+let number = 10;
+console.log(typeof(number)); // typeof mostra o tipo da variável
+
+// 10. Converta numero para string.
+
+let num1 = 10;
+let num1String = String(num1);
+console.log(typeof(num1String));
+console.log(num1String);
+
+// 11. String para numero
+
+let texto = "123";
+let textoNumber = Number(texto);
+console.log(typeof(textoNumber));
+console.log(Number(texto));
+
+// laços de repetição
+
+//12. Exiba no console de 0 a 10
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+};
+
+// 13. Exiba apenas numeros pares até 20.
+
+for (let i = 0; i <= 20; i+=2){
+    console.log(i)
+};
+
+// 14. Mostre no coonsole numero de 10 até 1
+
+for ( let i = 10; i >=1; i--){
+    console.log(i)
+};
+
+// 15. Some Numeros de 1 a 5.
+let somaLoop = 0;
+for (let i = 1; i<=5; i++){
+    somaLoop+=i;
+    console.log("Valor de i " +i+ " Valor de somaLoop " +somaLoop);
+}
+
+console.log(somaLoop);
