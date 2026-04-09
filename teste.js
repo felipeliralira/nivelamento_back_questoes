@@ -89,3 +89,13 @@ for (let i = 1; i<=5; i++){
 }
 
 console.log(somaLoop);
+
+// 16. Faça a tabuada do 3
+
+
+let sominha = 0;
+for (let i = 1; i <= 10; i++) {
+    sominha = 3 * i;
+    console.log("3 x " + i + " = " + sominha);
+    console.log("Valor de i " +i+ " Valor da sominha " +sominha);
+}
