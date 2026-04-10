@@ -92,10 +92,36 @@ console.log(somaLoop);
 
 // 16. Faça a tabuada do 3
 
+for (let i = 1; i <= 10; i++) {
+    console.log("3 x " + i + " = " + 3*i);
+}
 
+// do 9
 let sominha = 0;
 for (let i = 1; i <= 10; i++) {
-    sominha = 3 * i;
-    console.log("3 x " + i + " = " + sominha);
-    console.log("Valor de i " +i+ " Valor da sominha " +sominha);
+    sominha = 9 * i;
+    console.log("9 x " + i + " = " + sominha);
 }
+
+// 17.Conte quantos números são maiores que 5
+
+let lista = [2,6,8,1,3];
+let cont = 0;
+for (let i =0; i<lista.length;i++ ){
+    if(lista[i] > 5)cont++;
+}
+console.log(cont);
+
+
+//18.Percorra a string letra por letra
+let palavra = "JKRMN";
+for (let i =0; i<palavra.length;i++){
+    console.log(palavra[i]);
+}
+
+//19. Para um loop quando encontrar o numero 7 de 0 a 10
+
+for ( let i = 0; i <=10; i++){
+    if(i===8)break;
+    console.log(i)
+};
