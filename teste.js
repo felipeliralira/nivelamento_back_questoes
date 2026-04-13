@@ -113,15 +113,55 @@ for (let i =0; i<lista.length;i++ ){
 console.log(cont);
 
 
-//18.Percorra a string letra por letra
+// 18.Percorra a string letra por letra
 let palavra = "JKRMN";
 for (let i =0; i<palavra.length;i++){
     console.log(palavra[i]);
 }
 
-//19. Para um loop quando encontrar o numero 7 de 0 a 10
+// 19. Para um loop quando encontrar o numero 7 de 0 a 10
 
 for ( let i = 0; i <=10; i++){
     if(i===8)break;
     console.log(i)
 };
+
+// 20. Crie uma função que exibe uma mensagem qualquer
+
+function mensagem(){
+    console.log("OI");
+}
+mensagem()
+
+// 21. Função que multiplica 2 números
+
+function multiplicar(a,b){
+    return a * b;
+}
+console.log(multiplicar(2,3));
+
+//22. Crie uma função que verifica se é par ou impar 
+
+function verificar(num){
+    return num % 2 ===0 ? "par" : "impar";
+}
+console.log(verificar(2));
+
+//23. Crie uma função que retorne o dobro
+
+function dobro(numerodigitado){
+    return numerodigitado * 2;
+}
+console.log(dobro(2));
+
+//24. Crie uma função que some elementos de um array
+
+function somaArray(arr){
+    total = 0;
+    for (let i =0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+}
+console.log(somaArray([2,2,2]));
+
