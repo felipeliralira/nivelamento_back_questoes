@@ -221,8 +221,38 @@ console.log(numeros);
 //31. Exiba quantos elementos tem o array [5,10,15,20]
 
 let array = [5,10,15,20]
+console.log(`O array tem ${array.length} elementos`);
+
+// ou
+
 let somalup = 0
-for (let i = 0; i array.length; i++){
-    array+=1;
+for (let i = 1; i <= array.length; i++){
+    somalup+=i;
     console.log(i);
+}
+
+//32. Some todos os números do array
+
+let abc = [2,4,6,8];
+let sum = 0;
+for (let i = 0; i < abc.length; i++){
+    sum = sum + abc[i];
+}
+console.log(`A soma dos elementos é: ${sum}`);
+
+//33.Multiplique cada elemento do array [1, 2, 3, 4] por 2
+
+let abcd = [1,2,3,4];
+let summ = 0;
+for (let i = 0; i < abc.length; i*2){
+    summ = summ * abcd[i]
+}
+console.log(summ);
+
+//34.Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
+
+let frutinha = ["Maçã", "Banana", "Uva"]
+
+if (frutinha in ["Maçã", "Banana", "Uva"]){
+    
 }
