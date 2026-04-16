@@ -196,29 +196,29 @@ else{
 
 // Atividades com Array
 
-// 27. Crie um array com os numeros 10,20,30,40 e exiba todos os valores
+// 1. Crie um array com os numeros 10,20,30,40 e exiba todos os valores
 
 let arr = [10,20,30,40];
 console.log(arr);
 
-// 28.Crie um array com 5 frutas e exiba a primeira fruta
+// 2.Crie um array com 5 frutas e exiba a primeira fruta
 
 let frutas = ["banana", "maça", "pera", "uva", "acerola"];
 console.log(frutas[0])
 
-// 29. Adicione o número 50 no final do array [10,20,30,40]
+// 3. Adicione o número 50 no final do array [10,20,30,40]
 
 let arr2 = [10,20,30,40];
 arr.push(50);
 console.log(arr);
 
-// 30. Remove o ultimo elemento do array [1,2,3,4,5]
+// 4. Remove o ultimo elemento do array [1,2,3,4,5]
 
 let numeros = [1,2,3,4,5];
 numeros.pop();
 console.log(numeros);
 
-//31. Exiba quantos elementos tem o array [5,10,15,20]
+//5. Exiba quantos elementos tem o array [5,10,15,20]
 
 let array = [5,10,15,20]
 console.log(`O array tem ${array.length} elementos`);
@@ -231,7 +231,7 @@ for (let i = 1; i <= array.length; i++){
     console.log(i);
 }
 
-//32. Some todos os números do array
+//6. Some todos os números do array
 
 let abc = [2,4,6,8];
 let sum = 0;
@@ -240,19 +240,73 @@ for (let i = 0; i < abc.length; i++){
 }
 console.log(`A soma dos elementos é: ${sum}`);
 
-//33.Multiplique cada elemento do array [1, 2, 3, 4] por 2
+//7.Multiplique cada elemento do array [1, 2, 3, 4] por 2
 
-let abcd = [1,2,3,4];
-let summ = 0;
-for (let i = 0; i < abc.length; i*2){
-    summ = summ * abcd[i]
-}
-console.log(summ);
+// Ternário
 
-//34.Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
+// Verifique se um número é positivo ou não.*/
+let num4 = 5;
+let mensagem = num4 >=0 ? "Positivo" : "Negativo";
+console.log(`O Número ${num4} é: ${mensagem}`);
 
-let frutinha = ["Maçã", "Banana", "Uva"]
+// Verifique se uma pessoa pode votar.
+let idade2 = 16;
+let verificar = idade2 >= 16 ? "pode votar" : "não pode votar";
+console.log(`Tendo ${idade2} anos ${verificar}`);
 
-if (frutinha in ["Maçã", "Banana", "Uva"]){
-    
-}
+// Descubra se um número é par ou ímpar.
+let num5 = 14;
+let parimp = num5 % 2 ===0 ? "par" : "impar"
+console.log(`O número ${num5} é: ${parimp}`);
+
+/* Crie uma verificação de nível de acesso.
+-se nível for "admin", retorne "Acesso total"
+-Caso contrário, "Acesso restrito"*/
+
+let nivel = "admin";
+let verificacao = nivel === "admin" ? "Acesso total" : "Acesso restrito";
+console.log(`Nível ${nivel} : ${verificacao}`);
+
+// Aplique desconto a um produto
+let produto = 120;
+let desconto = produto > 100 ? produto * 0.9 : produto; 
+console.log(`Preço original: R$ ${produto}, com desconto: R$${desconto}`);
+
+// Classifique a situação do aluno baseado na média
+let media = 7.0;
+let passou_ou_nao = media >=7.0 ? "Aprovado" : "Reprovado"
+console.log(`Nota: ${media} : ${passou_ou_nao}`);
+
+// Verifique se um número é par E maior que 10
+let numero5 = 12;
+let criterio = numero5 % 2 === 0 && numero5 > 10 ? "Atende os critérios" : "Não atende os critérios";
+console.log(`O número ${numero5} : ${criterio}`);
+
+/*Classifique o numero em positivo, negativo ou zero.
+- se > 0: "Positivo"
+- se < 0: "Negativo"
+- se == 0: "Zero"
+*/
+
+let numero6 = 0;
+let classificacao = numero6 > 0 ? "Positivo" : numero6 < 0 ? "Negativo" : "Zero";
+console.log(`O número ${numero6} é: ${classificacao}`);
+
+/* Simule um login simples.
+- Se o usuario for "admin" E senha for "123", retorne "Login OK"
+- Caso contrário, "Falha no login"*/
+
+let usuario = "admin";
+let senha = 123;
+let login = usuario === "admin" && senha === 123 ? "Login OK" : "Falha no login";
+console.log(login);
+
+/* Classifique a pessoa por idade:
+-Menor que 12: "Criança"
+-Entre 12 e 17: "Adolescente"
+-Entre 18 e 59: "Adulto"
+-60 ou mais: "idoso"*/
+
+let idade22 = 12
+let class2 = idade22 < 12 ? "Criança" : idade22 <= 17 ? "Adolescente" : idade22 <= 59 ? "Adulto" : "Idoso";
+console.log(`${idade22} anos é classificado como: ${class2}`);
