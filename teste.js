@@ -310,3 +310,40 @@ console.log(login);
 let idade22 = 12
 let class2 = idade22 < 12 ? "Criança" : idade22 <= 17 ? "Adolescente" : idade22 <= 59 ? "Adulto" : "Idoso";
 console.log(`${idade22} anos é classificado como: ${class2}`);
+
+
+// ========= Atividades com objetos ===========
+// 51: Crie um objeto pessoa com nome "Ana" e idade 25
+let pessoa = {
+    nome: "Ana",
+    idade: 25
+};
+console.log(pessoa);
+
+//Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
+
+let pessoa2 = {
+    nome: "Carlos",
+    cidade: "São Paulo"
+};
+console.log(`Nome: ${pessoa2.nome}, cidade: ${pessoa2.cidade}`);
+
+// Adicione a propriedade "Curso" ao objeto {nome: "Maria", idade: 20}
+
+let pessoa3 = {
+    nome: "Maria",
+    idade: 20
+};
+console.log("Antes:",pessoa3);
+pessoa3.curso = "Matemática";
+console.log("Depois:", pessoa3);
+
+// 54: Altere a idade do objeto {nome: "João", idade: 18} para 19
+
+let pessoa4 = {
+    nome: "João",
+    idade: 18
+}
+console.log("Antes:", pessoa4);
+pessoa4.idade = 19;
+console.log("Depois", pessoa4);
