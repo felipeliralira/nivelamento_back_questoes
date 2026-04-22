@@ -253,5 +253,41 @@ console.log(summ);
 //34.Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
 
 let frutinha = ["Maçã", "Banana", "Uva"];
+let palavra1 = "banana";
+let achou = false;
 
-console.log(frutinha);
+for(let i = 0;i < frutinha.length; i++){
+    if(frutinha[i] == palavra1){
+        achou = true;
+    }
+}if(achou){
+    console.log(`${palavra1} foi encontrada!`);
+}
+else{
+    console.log(`${palavra1} não foi encontrada`);
+}
+
+// 35. Exiba 1 por 1 os elementos do array ["Azul", "Verde", "Amarelo"]
+
+let cor = ["Azul", "Verde", "Amarelo"];
+for(let i = 0; i < cor.length; i++){
+    console.log(cor[i]);
+}
+
+//36. Exiba o ultimo elemento do array [100, 200,300, 400, 500]
+
+let array1 = [100, 200,300, 400, 500]
+console.log(array1[4]);
+
+//ou
+
+let numerosarray = [100, 200,300, 400, 500];
+let ultimoIndice = 4;
+console.log(`O último elemento é: ${numerosarray[ultimoIndice]}`);
+
+//ou
+
+let numeros2 = [100, 200,300, 400, 500]
+for(let i = 4; i < numeros2.length; i++){
+    console.log(numeros2[i]);
+}
