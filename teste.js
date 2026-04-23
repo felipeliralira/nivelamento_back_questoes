@@ -291,3 +291,138 @@ let numeros2 = [100, 200,300, 400, 500]
 for(let i = 4; i < numeros2.length; i++){
     console.log(numeros2[i]);
 }
+
+//Atividades com matriz
+
+//41.Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda linha
+
+let matriz = [
+    [1,2],
+    [3,4]
+]
+console.log(matriz[0]);
+
+//42. Exiba o elemento da linha 1, coluna 2 da matriz [[5,6], [7,8]]
+
+let matriz1 = [
+    [5,6],
+    [7,8]
+]
+
+console.log(matriz1[0][1]);
+
+//43. Exiba todos os elementos da matriz [[1,2,3], [4,5,6]]
+
+let matriz2 = [
+    [1,2,3],
+    [4,5,6]
+]
+for(let i = 0; i<matriz2.length; i++){
+for(let j = 0; j<matriz2[i].length; j++){
+    console.log(`Elementos [${i}] [${j}] = ${matriz2[i][j]}`)
+}
+}
+
+//44. Some todos os números da matriz [[2,4], [6,8]]
+let somaprimeiralinha = 0
+let somaSegunda = 0
+let matriz3 = [
+    [2,4],
+    [6,8]
+]
+for(let i = 0; i<matriz3.length; i++){
+    somaprimeiralinha = somaprimeiralinha + matriz3[0][i]
+}
+
+for(let i = 0; i<matriz3.length; i++){
+    somaSegunda = somaSegunda + matriz3[1][i]
+}
+let somatotal = somaprimeiralinha + somaSegunda
+console.log(somatotal);
+
+//ou
+let som = 0
+let matriz4 = [
+    [2,4],
+    [6,8]
+]
+
+for(let i = 0; i<matriz4.length; i++){
+for(let j = 0; j<matriz4[i].length; j++){
+    som = som + matriz4[i][j];
+    console.log(`Soma [${i}] [${j}] = ${som}`);
+}
+}
+
+// 45: Crie uma matriz 3x3 com números de 1 a 9
+
+let matrix3x3 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+// 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+
+let matriz3x3 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+for (let i = 0; i< matriz3x3.length; i++){
+        console.log(matriz3x3[i][i]);
+}
+
+// 47: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
+
+let matrixa = [
+    [1,2],
+    [3,4]
+]
+matrixa[0][1] = 10;
+console.log(matrixa);
+
+// 48: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+
+let matrix10 = [
+    [10,20],
+    [30,40],
+    [50,60]
+]
+
+console.log(matrix10[0]);
+
+// 49: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+
+let coluna = [
+    [1,2],
+    [3,4],
+    [5,6]
+]
+for (let i = 0; i < coluna.length; i++) {
+    console.log(coluna[i][0]);
+}
+
+// 50: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+
+
+let Multiplique = [
+    [1,2],
+    [3,4],
+]
+let mult = [
+    [],
+    []
+]
+
+
+for (let i = 0; i<Multiplique.length; i++){
+for(let j = 0; j<Multiplique[i].length; j++){
+        mult[i][j] = Multiplique[i][j] * 2;
+
+}
+}
+
+console.log(mult);
+
+
