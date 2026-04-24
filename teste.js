@@ -299,7 +299,7 @@ for(let i = 4; i < numeros2.length; i++){
 let matriz = [
     [1,2],
     [3,4]
-]
+];
 console.log(matriz[0]);
 
 //42. Exiba o elemento da linha 1, coluna 2 da matriz [[5,6], [7,8]]
@@ -307,7 +307,7 @@ console.log(matriz[0]);
 let matriz1 = [
     [5,6],
     [7,8]
-]
+];
 
 console.log(matriz1[0][1]);
 
@@ -316,7 +316,7 @@ console.log(matriz1[0][1]);
 let matriz2 = [
     [1,2,3],
     [4,5,6]
-]
+];
 for(let i = 0; i<matriz2.length; i++){
 for(let j = 0; j<matriz2[i].length; j++){
     console.log(`Elementos [${i}] [${j}] = ${matriz2[i][j]}`)
@@ -329,7 +329,7 @@ let somaSegunda = 0
 let matriz3 = [
     [2,4],
     [6,8]
-]
+];
 for(let i = 0; i<matriz3.length; i++){
     somaprimeiralinha = somaprimeiralinha + matriz3[0][i]
 }
@@ -345,7 +345,7 @@ let som = 0
 let matriz4 = [
     [2,4],
     [6,8]
-]
+];
 
 for(let i = 0; i<matriz4.length; i++){
 for(let j = 0; j<matriz4[i].length; j++){
@@ -360,7 +360,7 @@ let matrix3x3 = [
     [1,2,3],
     [4,5,6],
     [7,8,9]
-]
+];
 
 // 46: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
 
@@ -368,7 +368,7 @@ let matriz3x3 = [
     [1,2,3],
     [4,5,6],
     [7,8,9]
-]
+];
 for (let i = 0; i< matriz3x3.length; i++){
         console.log(matriz3x3[i][i]);
 }
@@ -378,7 +378,7 @@ for (let i = 0; i< matriz3x3.length; i++){
 let matrixa = [
     [1,2],
     [3,4]
-]
+];
 matrixa[0][1] = 10;
 console.log(matrixa);
 
@@ -388,7 +388,7 @@ let matrix10 = [
     [10,20],
     [30,40],
     [50,60]
-]
+];
 
 console.log(matrix10[0]);
 
@@ -398,7 +398,7 @@ let coluna = [
     [1,2],
     [3,4],
     [5,6]
-]
+];
 for (let i = 0; i < coluna.length; i++) {
     console.log(coluna[i][0]);
 }
@@ -409,20 +409,14 @@ for (let i = 0; i < coluna.length; i++) {
 let Multiplique = [
     [1,2],
     [3,4],
-]
+];
 let mult = [
     [],
     []
-]
-
-
+];
 for (let i = 0; i<Multiplique.length; i++){
 for(let j = 0; j<Multiplique[i].length; j++){
         mult[i][j] = Multiplique[i][j] * 2;
-
 }
 }
-
 console.log(mult);
-
-
