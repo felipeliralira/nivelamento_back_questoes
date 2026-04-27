@@ -44,7 +44,6 @@ console.log(`teste ${var1} ${var2}`);
 
 // 9. Descubra o tipo de uma variável
 
-let number = 10;
 console.log(typeof(number)); // typeof mostra o tipo da variável
 
 // 10. Converta numero para string.
@@ -420,3 +419,77 @@ for(let j = 0; j<Multiplique[i].length; j++){
 }
 }
 console.log(mult);
+
+
+
+// ==================== ATIVIDADES COM OBJETOS ====================
+
+// 56: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+
+
+let objeto = 
+    {marca: "Nike",
+    tamanho: 42,
+    cor: "preto"}
+
+for (let prop in objeto){
+    console.log(`${prop}: ${objeto[prop]}`);
+}
+console.log(objeto);
+
+// 57: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+let cachorro =
+    {nome: "Rex",
+    latir: function(){
+        console.log("Au au!");
+    }
+}
+cachorro.latir();
+
+// 58: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
+
+let aluno =
+    {nome: "Lucas",
+    notas: [8,7,9]}
+
+console.log(aluno);
+
+// 59: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
+
+let carro = 
+    {marca: "Fiat"}
+
+let motor =
+    {potencia: "1.0"}
+
+for ( let prop in carro ){
+    console.log(`${prop}: ${carro[prop]}`);
+}
+for (let prop in motor){
+    console.log(`${prop}: ${motor[prop]}`);
+}
+
+// 60: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
+
+let produto1 = 
+    {nome: "nome1",
+    preço: 50.00
+    }
+let produto2 =
+    {nome: "nome2",
+    preço: 40.00
+    }
+let produto3 = 
+    {nome: "nome3",
+    preço: 35.00
+    }
+
+for (let prop in produto1){
+    console.log(`${prop}: ${produto1[prop]}`);
+}
+for (let prop in produto2){
+    console.log(`${prop}: ${produto2[prop]}`);
+}
+for (let prop in produto3){
+    console.log(`${prop}: ${produto3[prop]}`);
+}
