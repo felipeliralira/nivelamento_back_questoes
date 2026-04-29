@@ -493,3 +493,37 @@ for (let prop in produto2){
 for (let prop in produto3){
     console.log(`${prop}: ${produto3[prop]}`);
 }
+
+console.log("Exercício 1: Mostrar Elementos\n");
+//Essas chaves servem para abrir e fechar escopo.
+{
+let numeros = [1,2,3,4];
+console.log("Usando o for:");
+for(let i = 0; i < numeros.length; i ++){
+    console.log(numeros[i]);
+}
+console.log("Usando o forEach:")
+numeros.forEach(function(n){
+    if(n % 2 == 0){
+    console.log(n);
+    }
+    
+});
+
+console.log("for Each arrow (modo seta):");
+numeros.forEach(n => console.log(n));
+}
+// O forEach percorre o arreio, o que foi percorrido vira o n.
+
+// dados do array:
+// let frutas ["Maça", "Banana", "Uva", "Abacate"]
+// Utilizar ForEach função anônima e função arrow
+{
+let frutas1 = ["Maça","Banana", "Uva", "Abacate"];
+console.log("Usando o ForEach:");
+frutas1.forEach(function(n){
+    console.log(n);
+});
+console.log("for Each arrow (modo seta):");
+frutas1.forEach(n => console.log(n));
+}
