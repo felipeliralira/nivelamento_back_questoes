@@ -527,3 +527,14 @@ frutas1.forEach(function(n){
 console.log("for Each arrow (modo seta):");
 frutas1.forEach(n => console.log(n));
 }
+
+// some todos os valores e mostra o resultado
+// preços 10, 30, 50, 60:
+{
+let comprei = [10,30,50,60];
+let soma = 0;
+comprei.forEach(function(n){
+    soma += n
+});
+console.log(soma);
+}
