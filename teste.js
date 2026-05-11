@@ -551,5 +551,9 @@ for (let i = 0; i<numeros.length; i++){
     if(numeros[i] % 2 === 0){
         console.log(numeros[i]);
     }
+    console.log("Arrow");
+    numeros.forEach(n => {if(n%2 === 0) console.log(n);
+        
+    });
 }
 }
