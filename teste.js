@@ -532,9 +532,24 @@ frutas1.forEach(n => console.log(n));
 // preços 10, 30, 50, 60:
 {
 let comprei = [10,30,50,60];
+console.log("for");
 let soma = 0;
-comprei.forEach(function(n){
-    soma += n
-});
-console.log(soma);
+for(let i =0; i<comprei.length; i++){
+    soma += comprei[i];}
+    console.log(soma);
+
+    console.log("ForEach modo seta")
+    let somA= 0;
+    comprei.forEach(n => somA += n);
+    console.log(somA);
+};
+
+console.log("exercicios de pares!")
+{
+let numeros = [1,2,3,4,5,6,7,8];
+for (let i = 0; i<numeros.length; i++){
+    if(numeros[i] % 2 === 0){
+        console.log(numeros[i]);
+    }
+}
 }
